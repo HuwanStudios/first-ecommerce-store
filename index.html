@@ -5,10 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Headphone Store</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="/output.css" rel="stylesheet">
     <!--This script is here for testing until node version is fully fuctional-->
-    <!--<script src="https://cdn.tailwindcss.com"></script>-->
+    <link rel="stylesheet" href="src/output.css">
 </head>
 
 <body>
@@ -23,12 +21,12 @@
             </svg>
             
             <p>
-                30% off storewide - Limited time! <a href="#" class="text-yellow-500">Shop Now</a>
+                30% off storewide - Limited time! <a href="#" class="text-yellow-500">Shop Now <span> &#10141; </span></a>
             </p>
 
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" class="text-yellow-500">
+            <!--<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" class="text-yellow-500">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-            </svg>
+            </svg>-->
               
         </div>
     </header>
@@ -39,21 +37,22 @@
 
             <!-- Store Logo -->
             <div id="store-logo">
-                <img src="images/3legant.png" alt="Store Logo">
+                <img src="images/team-logo/3legant.png" alt="Store Logo">
             </div>
 
             <!-- Navigation Links -->
-            <div id="nav-links"
-            class="flex space-x-4">
-                <a href="#">Home</a>
-                <a href="#">Shop</a>
-                <a href="#">Products</a>
-                <a href="#">Contact Us</a>
-            </div>
+            <ul id="nav-links" class="flex space-x-4">
+                <!-- Navigation Links -->
+                <li><a href="#"> Home</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
 
             <!-- Icons (Search, Avatar, Shopping) -->
             <div id="icons"
-            class="flex space-x-1">
+            class="flex space-x-2">
 
                 <!--Search Icon-->
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" width="16"> 
@@ -74,26 +73,32 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section">
+    <section id="hero-section" class="flex flex-row w-full">
 
         <!-- Main Image on the Left w-1/2-->
-        <img src="images/hero-icon-cropped.png" alt="hero Image">
+        <div>
+            <img class="h-8 w-auto" src="images/hero-icon-cropped.png" alt="hero Image">
+        </div>
         <!-- Text Content on the Right w-1/2-->
-        <h1>Listen to the good music sound.</h1>
-        <p>Experience music like never before</p>
-        <button>Shopping Now</button>
+        <div class="h-8 w-1/2">
+            <h1>Listen to the good music sound.</h1>
+            <p>Experience music like never before</p>
+            <button>Shopping Now</button>
+        </div>
 
     </section>
 
     <!-- Brands Logos -->
-    <section>
+    <section id="brand-logos-section" class="flex flex-row justify-evenly space-x-2 overflow-hidden">
 
         <!-- Logos go here -->
-        <img src="https://via.placeholder.com/100" alt="Brand Logo">
+        <img src="images/team-logo/logo01.png" alt="Brand Logo">
         <!-- Repeat for each logo -->
-        <img src="https://via.placeholder.com/100" alt="Brand Logo">
-        <img src="https://via.placeholder.com/100" alt="Brand Logo">
-        <img src="https://via.placeholder.com/100" alt="Brand Logo">
+        <img src="https://img.logoipsum.com/239.svg" alt="Brand Logo">
+        <img src="https://img.logoipsum.com/211.svg" alt="Brand Logo">
+        <img src="images/team-logo/logo02.png" alt="Brand Logo">
+        <img src="images/team-logo/logo03.png" alt="Brand Logo">
+        <img src="images/team-logo/logo01.png" alt="Brand Logo">
 
     </section>
 
@@ -283,14 +288,14 @@
             </div>
 
             <!-- Top Right Footer Section -->
-            <div>
+            <ul>
                 <!-- Navigation Links -->
-                <a href="#"> Home</a>
-                <a href="#">Shop</a>
-                <a href="#">Products</a>
-                <a href="#">Blog</a>
-                <a href="#">Contact Us</a>
-            </div>
+                <li><a href="#"> Home</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
         </div>
 
         <!-- Bottom Footer Section -->
