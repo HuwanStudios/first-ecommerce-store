@@ -62,4 +62,4 @@ Collection Carousel - It should have the following:
 
 
 
-  # I will have to include the promt for whatever I used in orderto get enough of the webpage
+  # I will have to include the promt for whatever I used in order to document next steps for the webpage
